@@ -1,0 +1,23 @@
+{
+  "name": "password_hasher",
+  "version": "1.0.0",
+  "description": "A simple password hashing script using bcrypt.",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemmah/bcrypt-experiment.git"
+  },
+  "author": "James Lemayian Nakolah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lemmah/bcrypt-experiment/issues"
+  },
+  "homepage": "https://github.com/Lemmah/bcrypt-experiment#readme"
+}
