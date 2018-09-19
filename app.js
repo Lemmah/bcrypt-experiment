@@ -1,4 +1,5 @@
 const bcrypt = require('bcrypt');
+const colors = require('colors');
 const wrongPassword = 'passwOrd';
 const unsecurePlainTextPassword = 'password';
 const saltRounds = 10;
@@ -10,7 +11,7 @@ const saltRounds = 10;
  */
 const comparePass = (pass, hash) => {
   const correct = bcrypt.compareSync(pass, hash);
-  console.log('Correct password: ', correct);
+  console.log(`Correct password: ${correct}`.green);
   console.log(bcrypt.getRounds(hash).toString(), 'rounds of salt were used to encrypt this.');
 }
 
@@ -20,7 +21,7 @@ const comparePass = (pass, hash) => {
  */
 bcrypt.hash(unsecurePlainTextPassword, saltRounds)
   .then(hash => {
-    console.log(hash);
+    console.log(hash.green);
     return  hash;
   })
   .then(hash => {

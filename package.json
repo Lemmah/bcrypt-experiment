@@ -4,7 +4,8 @@
   "description": "A simple password hashing script using bcrypt.",
   "main": "app.js",
   "dependencies": {
-    "bcrypt": "^3.0.0"
+    "bcrypt": "^3.0.0",
+    "colors": "^1.3.2"
   },
   "devDependencies": {},
   "scripts": {
